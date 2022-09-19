@@ -1,0 +1,165 @@
+.footer {
+  padding: 60px 0;
+  background-color: $secondary-bg;
+}
+
+.footer__group {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__logo-group {
+  width: 231px;
+  margin-right: 70px;
+}
+
+.footer__logo {
+  display: block;
+  margin-bottom: 20px;
+  font-family: $logo-font;
+  font-size: 26px;
+  line-height: 1.19;
+  color: $main-bg;
+}
+
+.footer__list:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer__link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: $main-bg;
+
+  transition: color $animation;
+
+  &:hover,
+  &:focus {
+    color: $brand-clr;
+  }
+}
+
+.footer__link--grey {
+  color: $grey-clr-60;
+}
+
+/* Social-links */
+
+.footer__social-links {
+  width: 206px;
+  height: 80px;
+  margin-right: 93px;
+}
+
+.footer__social-text {
+  display: block;
+  margin-bottom: 20px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $main-bg;
+}
+
+.footer__social-group {
+  display: flex;
+  gap: 10px;
+}
+
+.footer__social-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: $main-bg;
+  background-color: $icon-bg-clr;
+  fill: currentColor;
+
+  transition: background-color $animation;
+
+  &:hover,
+  &:focus {
+    background-color: $brand-clr;
+  }
+}
+
+/* Form INPUT */
+
+.form__group {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  gap: 12px;
+}
+
+.form__input {
+  width: 358px;
+  height: 50px;
+
+  padding: 15px 16px;
+
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: $main-bg;
+  background-color: transparent;
+  border: $footer-form-border;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: none;
+
+  transition: border-color $animation;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+
+    color: $grey-clr-60;
+  }
+
+  &:focus-within {
+    border-color: $brand-clr;
+  }
+}
+
+.form__label {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+
+  color: $main-bg;
+}
+
+.form__btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+
+  width: 200px;
+  height: 50px;
+
+  background-color: $brand-clr;
+  box-shadow: 0px 4px 4px $hero-btn-shadow;
+  border: none;
+  border-radius: 4px;
+  color: $main-bg;
+  fill: currentColor;
+  cursor: pointer;
+
+  transition: color $animation, background-color $animation;
+
+  &:hover,
+  &:focus {
+    background-color: $main-bg;
+    color: $brand-clr;
+  }
+}

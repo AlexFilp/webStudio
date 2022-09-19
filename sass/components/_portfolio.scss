@@ -1,0 +1,127 @@
+.portfolio-section {
+  padding-bottom: 91px;
+}
+
+.portfolio-section__list-btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  gap: 8px;
+}
+
+.portfolio-section__btn {
+  padding: 6px 22px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  color: $main-text-clr;
+  background-color: $special-bg;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+
+  transition: color $animation, background-color $animation,
+    box-shadow $animation;
+
+  &:hover,
+  &:focus {
+    color: $main-bg;
+    background-color: $brand-clr;
+    box-shadow: $btn-shadow;
+  }
+}
+
+.portfolio-section__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.portfolio-section__item {
+  width: calc((100% - 60px) / 3);
+
+  transition: box-shadow $animation;
+
+  &:hover,
+  &:focus {
+    box-shadow: $prtfl-card-shadow;
+  }
+
+  & .link {
+    display: block;
+  }
+
+  &:hover .link {
+    box-shadow: $prtfl-card-shadow;
+  }
+
+  &:hover .portfolio-section__overlay,
+  &:focus .portfolio-section__overlay {
+    transform: translateY(0);
+  }
+}
+
+/* Вариант отступов через маржины */
+
+/* .portfolio-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.portfolio-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+} */
+
+.portfolio-section__group {
+  padding: 20px 24px;
+  border: $portfolio-border;
+}
+
+.portfolio-section__title {
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.portfolio-section__text {
+  font-size: 16px;
+  line-height: 1.88;
+  color: $secondary-text-clr;
+}
+
+/* Позиционирование и оверлей */
+
+.portfolio-section__thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-section__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: $prtfl-bg-clr;
+
+  transform: translateY(101%);
+  transition: transform $animation;
+}
+
+.portfolio-section__overlay-desc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 322px;
+  height: 168px;
+
+  font-size: 18px;
+  line-height: 1.56;
+
+  color: $main-bg;
+}
