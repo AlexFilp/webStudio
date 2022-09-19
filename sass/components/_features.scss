@@ -3,12 +3,23 @@
 }
 
 .features-section__list {
-  display: flex;
-  gap: 30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 .features-section__item {
-  width: calc((100% - 90px) / 4);
+  width: 450px;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .features-section__icon-container {
@@ -23,12 +34,17 @@
 .features-section__title {
   margin-bottom: 10px;
 
+  text-align: center;
   font-size: 14px;
   line-height: 1.14;
+
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
 }
 
 .features-section__text {
-  width: 270px;
+  width: 100%;
   line-height: 1.71;
   color: $secondary-text-clr;
 }

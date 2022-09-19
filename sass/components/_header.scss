@@ -16,6 +16,12 @@
   font-size: 26px;
   line-height: 1.19;
   color: #000000;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 87px;
+    font-size: 24px;
+    line-height: 1.16;
+  }
 }
 
 .header__logo-accent {
@@ -64,9 +70,13 @@
 .contact-list {
   display: flex;
   margin-left: auto;
+  gap: 30px;
 
-  &__item:not(:last-child) {
-    margin-right: 50px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-direction: column;
+    gap: 10px;
+    padding: 21px 0;
+    margin-left: 96px;
   }
 }
 
@@ -76,4 +86,10 @@
   gap: 10px;
   color: $secondary-text-clr;
   fill: currentColor;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 0;
+    font-size: 12px;
+    line-height: 1.16;
+  }
 }
