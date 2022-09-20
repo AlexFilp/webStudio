@@ -13,8 +13,8 @@
 
 .header__logo {
   display: block;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   margin-right: 93px;
 
   font-family: $logo-font;
@@ -26,6 +26,11 @@
     margin-right: 87px;
     font-size: 24px;
     line-height: 1.16;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 }
 
@@ -111,21 +116,23 @@
   margin: 0;
   padding: 0;
   border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  fill: currentColor;
+  color: $main-text-clr;
   background-color: transparent;
+
+  transition: color $animation;
+
+  &:hover,
+  &:focus {
+    color: $brand-clr;
+  }
 
   @media screen and (min-width: 768px) {
     display: none;
   }
-}
-
-.header__menu-btn .header__icon-close {
-  display: none;
-}
-
-.header__menu-btn.is-open .header__icon-close {
-  display: block;
-}
-
-.header__menu-btn.is-open .header__icon-menu {
-  display: none;
 }
