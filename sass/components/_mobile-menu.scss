@@ -4,7 +4,7 @@
   left: 0;
 
   width: 100vw;
-  height: 796px;
+  height: 100vh;
 
   padding: 48px 83px 48px 40px;
 
@@ -26,9 +26,16 @@
   right: 15px;
 }
 
-.header__menu-list {
-  margin-bottom: 302px;
+.header__menu-group {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
+// .header__menu-list {
+//   margin-bottom: 302px;
+// }
 
 .header__menu-item {
   &:not(:last-child) {
