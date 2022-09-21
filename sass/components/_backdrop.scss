@@ -8,6 +8,7 @@
 
   display: inline-block;
   background-color: $backdrop-bg-clr;
+  overflow-y: scroll;
 
   opacity: 1;
   transition: opacity $animation, visibility $animation;
