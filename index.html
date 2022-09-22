@@ -217,17 +217,32 @@
           <h2 class="title">Наша команда</h2>
           <ul class="list team-section__list">
             <li class="team-section__item">
-              <img
-                class="team-section__img"
-                srcset="
-                  ./images/WebStudio/igor-450.jpg 1x,
-                  ./images/WebStudio/igor-900.jpg 2x
-                "
-                src="./images/WebStudio/igor-450.jpg"
-                alt="Фото Ігора"
-                width="450"
-                height="460"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/WebStudio/igor-450.jpg 1x,
+                    ./images/WebStudio/igor-900.jpg 2x
+                  "
+                  media="(max-width: 767px)" />
+                <source
+                  srcset="
+                    ./images/WebStudio/igor-354.jpg 1x,
+                    ./images/WebStudio/igor-708.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/WebStudio/igor-270.jpg 1x,
+                    ./images/WebStudio/igor-540.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <img
+                  class="team-section__img"
+                  src="./images/WebStudio/igor-450.jpg"
+                  alt="Фото Ігора"
+                  width="450"
+                  height="460"
+              /></picture>
               <div class="team-section__group">
                 <h3 class="team-section__title">Ігор Дем'яненко</h3>
                 <p lang="en" class="team-section__text">Product Designer</p>
