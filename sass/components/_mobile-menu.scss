@@ -27,6 +27,7 @@
 }
 
 .header__menu-group {
+  min-width: 320px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -70,7 +71,7 @@
 
 .header__menu-contact-link {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 31px;
   line-height: 1.17;
   letter-spacing: 0.02em;
 
@@ -82,6 +83,10 @@
     color: $brand-clr;
   }
 
+  @media screen and (min-width: 338px) {
+    font-size: 34px;
+  }
+
   &--mail {
     font-size: 24px;
     line-height: 1.16;
@@ -90,6 +95,7 @@
 
 .header__menu-socials-group {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
