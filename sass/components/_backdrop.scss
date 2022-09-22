@@ -25,7 +25,6 @@
 }
 
 .modal {
-  width: 450px;
   height: 609px;
   padding: 40px;
 
@@ -39,6 +38,14 @@
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform $animation;
+
+  @media screen and (max-width: 450px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 451px) and (max-width: 1199px) {
+    width: 450px;
+  }
 
   @media screen and (min-width: 1200px) {
     width: 528px;
@@ -173,7 +180,7 @@
 
 .modal-form__policy-label {
   display: flex;
-  justify-content: center;
+
   align-items: center;
   gap: 8px;
   margin-bottom: 30px;
@@ -187,6 +194,7 @@
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.71;
+    justify-content: center;
   }
 }
 
