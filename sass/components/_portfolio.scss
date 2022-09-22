@@ -57,6 +57,7 @@
 
 .portfolio-section__item {
   width: 100%;
+  border: $portfolio-border;
 
   transition: box-shadow $animation;
 
@@ -67,6 +68,7 @@
 
   & .link {
     display: block;
+    height: 100%;
   }
 
   &:hover .link {
@@ -99,7 +101,6 @@
 
 .portfolio-section__group {
   padding: 20px 24px;
-  border: $portfolio-border;
 }
 
 .portfolio-section__title {
