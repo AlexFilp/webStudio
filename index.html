@@ -176,7 +176,11 @@
             <li class="work-section__item">
               <div class="work-section__thumb">
                 <img
-                  src="./images/WebStudio/working.jpg"
+                  srcset="
+                    ./images/WebStudio/tablet-370.jpg 1x,
+                    ./images/WebStudio/tablet-740.jpg 2x
+                  "
+                  src="./images/WebStudio/tablet-370.jpg"
                   alt="Робота"
                   width="370"
                   height="294"
@@ -187,7 +191,11 @@
             <li class="work-section__item">
               <div class="work-section__thumb">
                 <img
-                  src="./images/WebStudio/notebook.jpg"
+                  srcset="
+                    ./images/WebStudio/mobile-370.jpg 1x,
+                    ./images/WebStudio/mobile-740.jpg 2x
+                  "
+                  src="./images/WebStudio/mobile-370.jpg"
                   alt="Ноутбук"
                   width="370"
                   height="294"
@@ -198,7 +206,11 @@
             <li class="work-section__item">
               <div class="work-section__thumb">
                 <img
-                  src="./images/WebStudio/pad.jpg"
+                  srcset="
+                    ./images/WebStudio/tablet2-370.jpg 1x,
+                    ./images/WebStudio/tablet2-740.jpg 2x
+                  "
+                  src="./images/WebStudio/tablet2-370.jpg"
                   alt="Планшет"
                   width="370"
                   height="294"
@@ -217,8 +229,8 @@
           <h2 class="title">Наша команда</h2>
           <ul class="list team-section__list">
             <li class="team-section__item">
-              <picture>
-                <source
+              <picture
+                ><source
                   srcset="
                     ./images/WebStudio/igor-450.jpg 1x,
                     ./images/WebStudio/igor-900.jpg 2x
@@ -303,17 +315,32 @@
               </div>
             </li>
             <li class="team-section__item">
-              <img
-                class="team-section__img"
-                srcset="
-                  ./images/WebStudio/olga-450.jpg 1x,
-                  ./images/WebStudio/olga-900.jpg 2x
-                "
-                src="./images/WebStudio/olga-450.jpg"
-                alt="Фото Ольги"
-                width="450"
-                height="460"
-              />
+              <picture
+                ><source
+                  srcset="
+                    ./images/WebStudio/olga-450.jpg 1x,
+                    ./images/WebStudio/olga-900.jpg 2x
+                  "
+                  media="(max-width: 767px)" />
+                <source
+                  srcset="
+                    ./images/WebStudio/olga-354.jpg 1x,
+                    ./images/WebStudio/olga-708.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/WebStudio/olga-270.jpg 1x,
+                    ./images/WebStudio/olga-540.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <img
+                  class="team-section__img"
+                  src="./images/WebStudio/olga-450.jpg"
+                  alt="Фото Ольги"
+                  width="450"
+                  height="460"
+              /></picture>
               <div class="team-section__group">
                 <h3 class="team-section__title">Ольга Рєпіна</h3>
                 <p lang="en" class="team-section__text">Frontend Developer</p>
@@ -374,17 +401,32 @@
               </div>
             </li>
             <li class="team-section__item">
-              <img
-                class="team-section__img"
-                srcset="
-                  ./images/WebStudio/mikola-450.jpg 1x,
-                  ./images/WebStudio/mikola-900.jpg 2x
-                "
-                src="./images/WebStudio/mikola-450.jpg"
-                alt="Фото Миколи"
-                width="450"
-                height="460"
-              />
+              <picture
+                ><source
+                  srcset="
+                    ./images/WebStudio/mikola-450.jpg 1x,
+                    ./images/WebStudio/mikola-900.jpg 2x
+                  "
+                  media="(max-width: 767px)" />
+                <source
+                  srcset="
+                    ./images/WebStudio/mikola-354.jpg 1x,
+                    ./images/WebStudio/mikola-708.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/WebStudio/mikola-270.jpg 1x,
+                    ./images/WebStudio/mikola-540.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <img
+                  class="team-section__img"
+                  src="./images/WebStudio/mikola-450.jpg"
+                  alt="Фото Миколи"
+                  width="450"
+                  height="460"
+              /></picture>
               <div class="team-section__group">
                 <h3 class="team-section__title">Микола Тарасов</h3>
                 <p lang="en" class="team-section__text">Marketing</p>
@@ -445,17 +487,32 @@
               </div>
             </li>
             <li class="team-section__item">
-              <img
-                class="team-section__img"
-                srcset="
-                  ./images/WebStudio/mihaylo-450.jpg 1x,
-                  ./images/WebStudio/mihaylo-900.jpg 2x
-                "
-                src="./images/WebStudio/mihaylo-450.jpg"
-                alt="Фото Михайла"
-                width="450"
-                height="460"
-              />
+              <picture
+                ><source
+                  srcset="
+                    ./images/WebStudio/mihaylo-450.jpg 1x,
+                    ./images/WebStudio/mihaylo-900.jpg 2x
+                  "
+                  media="(max-width: 767px)" />
+                <source
+                  srcset="
+                    ./images/WebStudio/mihaylo-354.jpg 1x,
+                    ./images/WebStudio/mihaylo-708.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/WebStudio/mihaylo-270.jpg 1x,
+                    ./images/WebStudio/mihaylo-540.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <img
+                  class="team-section__img"
+                  src="./images/WebStudio/mihaylo-450.jpg"
+                  alt="Фото Михайла"
+                  width="450"
+                  height="460"
+              /></picture>
               <div class="team-section__group">
                 <h3 class="team-section__title">Михайло Єрмаков</h3>
                 <p lang="en" class="team-section__text">UI Designer</p>
