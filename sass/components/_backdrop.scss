@@ -11,7 +11,7 @@
   overflow-y: scroll;
 
   opacity: 1;
-  transition: opacity $animation, visibility $animation;
+  transition: opacity $animation;
 }
 
 .backdrop.is-hidden {
